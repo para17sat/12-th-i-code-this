@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Collections</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f1f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .tags span {
+            padding: 5px 15px;
+            background-color: #edf2f7;
+            color: #333;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .collections {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .collection-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .collection-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .collection-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .collection-content {
+            padding: 20px;
+        }
+
+        .collection-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #343a40;
+            margin-bottom: 15px;
+        }
+
+        .thumbnail-row {
+            display: flex;
+            gap: 5px;
+        }
+
+        .thumbnail-row img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .image-count {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+            display: flex;
+            align-items: center;
+        }
+
+        .image-count svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Popular Collections</h2>
+        <div class="tags">
+            <span>Profile</span>
+            <span>Shopping</span>
+            <span>Travel</span>
+            <span>Football</span>
+            <span>Food</span>
+        </div>
+        <div class="collections">
+
+            <div class="collection-card">
+                <img src="https://avatars.mds.yandex.net/get-entity_search/1981853/953065758/S600xU_2x" alt="Actors">
+                <div class="collection-content">
+                    <div class="collection-title">Actors</div>
+                    <div class="thumbnail-row">
+                        <img src="https://avatars.mds.yandex.net/get-entity_search/1540656/984471714/S600xU_2x" alt="Actor 1">
+                        <img src="https://avatars.mds.yandex.net/get-entity_search/5107294/952254224/S600xU_2x" alt="Actor 2">
+                        <img src="https://avatars.mds.yandex.net/i?id=28fd97e194da1a425a96af284cd1a09f_l-12498607-images-thumbs&n=13" alt="Actor 3">
+                        <img src="https://static.wikia.nocookie.net/ppc/images/c/cf/Harry_Potter.png/revision/latest?cb=20150401230333" alt="Actor 4">
+                    </div>
+                    <div class="image-count">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 10l4.553-4.553A2 2 0 0119.207 3H4.793a2 2 0 01-1.346.447L8 10h7zm-3 7a2 2 0 11-4 0 2 2 0 014 0zM9 17h6a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 002 2z" />
+                        </svg>
+                        144 Images
+                    </div>
+                </div>
+            </div>
+            
+            <div class="collection-card">
+                <img src="https://avatars.mds.yandex.net/i?id=9dd1e08cff6a959f7f40ae27652c0902_l-4569449-images-thumbs&n=13" alt="Places">
+                <div class="collection-content">
+                    <div class="collection-title">Popular places</div>
+                    <div class="thumbnail-row">
+                        <img src="https://avatars.mds.yandex.net/i?id=6c25fce615f01027ab7ef9768d1fd9bb_l-5235777-images-thumbs&n=13" alt="Place 1">
+                        <img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/e55495a9-e118-4cf5-8d83-22f596d8886d/" alt="place 2">
+                        <img src="https://avatars.mds.yandex.net/i?id=8dda4f0d40752515a53cdab61964c3c92e96db2b-11032727-images-thumbs&n=13" alt="Place 3">
+                        <img src="https://i.pinimg.com/736x/d2/e2/0c/d2e20c4630d848825e8bbb7775bada6b.jpg" alt="Place 4">
+                    </div>
+                    <div class="image-count">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 10l4.553-4.553A2 2 0 0119.207 3H4.793a2 2 0 01-1.346.447L8 10h7zm-3 7a2 2 0 11-4 0 2 2 0 014 0zM9 17h6a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 002 2z" />
+                        </svg>
+                        17k Images
+                    </div>
+                </div>
+            </div>
+        
+            <div class="collection-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/2020-03-10_Fußball%2C_Männer%2C_UEFA_Champions_League_Achtelfinale%2C_RB_Leipzig_-_Tottenham_Hotspur_1DX_3676_by_Stepro.jpg/1200px-2020-03-10_Fußball%2C_Männer%2C_UEFA_Champions_League_Achtelfinale%2C_RB_Leipzig_-_Tottenham_Hotspur_1DX_3676_by_Stepro.jpg" alt="History">
+                <div class="collection-content">
+                    <div class="collection-title">Populatr footballers</div>
+                    <div class="thumbnail-row">
+                        <img src="https://avatars.dzeninfra.ru/get-zen_doc/1911932/pub_5e88a30f6ae5482256cae593_5e88a44498b4c86819a670a6/scale_1200" alt="Footballer 1">
+                        <img src="https://sun9-37.userapi.com/impg/ny_0bOhnla24iZF1mk4GkYFi3dLxt1131o9jRQ/qDRsr3y-Kng.jpg?size=646x807&quality=96&sign=ab71d4ed8d6b2d1a3fbf1ffb34a70d49&c_uniq_tag=29sYNH_nlR1kWMsOYLPH0BnoS-9Dy84ZQ0DyKYMkoUs&type=album" alt="Footballer 2">
+                        <img src="https://avatars.mds.yandex.net/get-entity_search/5103535/931688419/S600xU_2x" alt="Footballer 3">
+                        <img src="https://i.pinimg.com/736x/36/5b/34/365b34eb2e5f595a0d88d85ab49953ca.jpg" alt="Footballer 4">
+                    </div>
+                    <div class="image-count">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 10l4.553-4.553A2 2 0 0119.207 3H4.793a2 2 0 01-1.346.447L8 10h7zm-3 7a2 2 0 11-4 0 2 2 0 014 0zM9 17h6a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 002 2z" />
+                        </svg>
+                        431 Images
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
